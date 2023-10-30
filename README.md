@@ -8,5 +8,16 @@ Inicialmente é implementado o algoritmo de detecção de objetos YOLOv8, com o 
 - **Leitura das folhas de resposta**
 - **Comparação e pontuação**
 
+## Instalação
+### Requirements
+
 ## Modo de uso
 Adicione as imagens das provas na pasta nomeada como input, execute o notebook nomeado *main.ipynb* e o relatório estará disponivel no diretório output
+
+## Bibliotecas utilizadas
+
+## FAQ
+
+## print do projeto
+
+## Colaboradores
