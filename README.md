@@ -13,11 +13,16 @@ flowchart TD
     J-->F
     K-->F
 ```
-
-
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <a target="_blank" align="center">
   <img align="right" top="500" height="300" width="400" alt="GIF" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif">
 </a>
+- Cool Stats on Laptop
+<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/0b335028-1d3d-4ee5-b5b3-a373d499be7e" width="400">
+- YouTube Logo Animation
+<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/63338029-e963-463a-88cb-c8f39c73e8d9" width="400">
+<br><br>
+<br><br>
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://nativescript.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/nativescript.svg" alt="nativescript" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
 
@@ -48,7 +53,8 @@ YAML                     1 hr 38 mins        ██░░░░░░░░░�
 PyCharm                  8 hrs 35 mins       ███████████░░░░░░░░░░░░░░   45.55% 
 WebStorm                 7 hrs 47 mins       ██████████░░░░░░░░░░░░░░░   41.33% 
 PhpStorm                 2 hrs 28 mins       ███░░░░░░░░░░░░░░░░░░░░░░   13.12%
-
+<h2 align="center"> That's all folks!</h2>
+<p align="center">Raw version in the Markdown and reStructuredText format are available below</p>
 💻 Operating Systems: 
 Windows                  18 hrs 52 mins      █████████████████████████   100.0%
 
@@ -112,7 +118,15 @@ pip install ultralytics
 For alternative installation methods including [Conda](https://anaconda.org/conda-forge/ultralytics), [Docker](https://hub.docker.com/r/ultralytics/ultralytics), and Git, please refer to the [Quickstart Guide](https://docs.ultralytics.com/quickstart).
 
 </details>
+## Roadmap
 
+- [x] Add Changelog
+- [x] Add back to top links
+- [ ] Add Additional Templates w/ Examples
+- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Multi-language Support
+    - [ ] Chinese
+    - [ ] Spanish
 
 # PROTÓTIPO DE SOLUÇÃO PARA CORREÇÃO AUTOMÁTICA DE PROVAS E SIMULADOS
 Este projeto foi desenvolvido para o hackaton, produzido pela pixforce e meninas++, com o intuito de implementar um modelo capaz de ler gabaritos de provas e realizar a correção automática dos mesmos, auxiliando e agilizando este processo.
