@@ -1,3 +1,22 @@
+
+# Projeto de Classificação de Imagens para Detecção de Questões em Provas
+
+Este projeto tem como objetivo a classificação e detecção de imagens de provas em dois tipos distintos: provas gabarito e provas simuladas. A classificação é realizada usando o modelo YOLOv8m-cls, que é uma versão do YOLO (You Only Look Once) otimizada para tarefas de classificação de objetos.
+
+## Configuração do modelo de Classificação
+
+### Parâmetros do Modelo
+
+- **Tarefa (Task):** Classificação de imagens.
+- **Modo (Mode):** Treinamento.
+- **Modelo (Model):** YOLOv8m-cls.yaml
+- **Dados (Data):** Diretório "/content/gdrive/MyDrive/simulados" contendo as imagens de treinamento.
+- **Épocas (Epochs):** 300.
+- **Paciência (Patience):** 50.
+- **Tamanho do Lote (Batch):** 16.
+- **Tamanho da Imagem (Imgsz):** 224 pixels.
+
+## Fluxo do Projeto
 ```mermaid
 flowchart TD
     A{Provas ou Simulados} --> B[Respostas Prova]
@@ -12,6 +31,41 @@ flowchart TD
     H-->F
     J-->F
     K-->F
+```
+
+1. **Pré-processamento de Imagens:** As imagens de provas são pré-processadas para o tamanho de imagem especificado (224x224 pixels).
+2. **Treinamento do Modelo:** O modelo YOLOv8m-cls é treinado com as imagens de treinamento para classificar entre provas gabarito e provas simuladas.
+3. **Classificação de Imagens:** Após o treinamento, o modelo é usado para classificar novas imagens como provas gabarito ou provas simuladas.
+
+
+3. **subconjunto das imagens de simulado**
+Caso a imagem for classificada como sendo uma do tipo simulado, ela será processada novamente agora para classificar a qual subconjunto das imagens de simulado ela pertence, visando assim atribuir a mesma um modelo otimizado para o seu tipo de prova, sendo estes o modelo para provas verdes o modelo para provas azul e o modelo para provas diversas que engloba uma variedade de provas com vários formatos diferentes. 
+
+
+```mermaid
+flowchart TD
+   C{Tipos Simulados} 
+    
+    C --> D[Verde]
+    C --> E[Azul]
+    C --> G[Diversos]
+ 
+```
+### Parâmetros do Modelo para o Tipo verde
+- **Tarefa (Task):** detecção .
+- **Modo (Mode):** Treinamento.
+- **Modelo (Model):** yolov8m.yaml
+- **Dados (Data):** Diretório "/content/gdrive/MyDrive/simulados" contendo as imagens de treinamento.
+- **Épocas (Epochs):** 300.
+- **Paciência (Patience):** 50.
+- **Tamanho do Lote (Batch):** 16.
+- **Tamanho da Imagem (Imgsz):** 640 pixels.
+## Como Executar o Projeto
+
+1. Clone este repositório:
+
+```shell
+git clone https://github.com/Daniel227a/desafio.git
 ```
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <a target="_blank" align="center">
