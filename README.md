@@ -229,7 +229,7 @@ Adicione as imagens das provas na pasta nomeada como input, execute o notebook n
 
 ## 🤝 Colaboradores
 
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
+
 
 <table>
   <tr>
@@ -251,9 +251,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
     <td align="center">
       <a href="#">
-        <img src="https://miro.medium.com/max/360/0*1SkS3mSorArvY9kS.jpg" width="100px;" alt="Foto do Steve Jobs"/><br>
+        <img src="https://avatars.githubusercontent.com/u/51803858?v=4" width="100px;" alt="Gabriel Mota "/><br>
         <sub>
-          <b>Steve Jobs</b>
+          <b>Gabriel Mota</b>
         </sub>
       </a>
     </td>
