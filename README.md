@@ -64,16 +64,38 @@ flowchart TD
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 640 pixels.
 
-## Resultados do treinamento
+## Resultados do treinamento Modelo verde
 <a target="_blank" align="center">
   <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/results_verde.png">
 </a>
 
 
-## matriz de confusão normalizada
+## matriz de confusão normalizada  Modelo verde
 <a target="_blank" align="center">
   <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/confusion_matrix_verde_normalized.png">
 </a>
+
+### Parâmetros do Modelo para o Tipo verde
+- **Tarefa (Task):** detecção .
+- **Modo (Mode):** Treinamento.
+- **Modelo (Model):** yolov8m.yaml
+- **Épocas (Epochs):** 300.
+- **Paciência (Patience):** 50.
+- **Tamanho do Lote (Batch):** 16.
+- **Tamanho da Imagem (Imgsz):** 640 pixels.
+## Resultados do treinamento Modelo azul
+<a target="_blank" align="center">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/results_blue_.png">
+</a>
+
+
+## matriz de confusão normalizada Modelo azul
+<a target="_blank" align="center">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/confusion_blue_matrix_normalized.png">
+</a>
+
+
+https://github.com/Daniel227a/desafio/blob/main/results_blue_.png
 ## Como Executar o Projeto
 
 1. Clone este repositório:
