@@ -15,7 +15,7 @@ Este projeto tem como objetivo a classificação e detecção de imagens de prov
 - **Paciência (Patience):** 50.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 224 pixels.
-
+  
 ## Fluxo do Projeto
 ```mermaid
 flowchart TD
@@ -60,6 +60,17 @@ flowchart TD
 - **Paciência (Patience):** 50.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 640 pixels.
+
+## Resultados do treinamento
+<a target="_blank" align="center">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/results_verde.png">
+</a>
+
+
+## matriz de confusão normalizada
+<a target="_blank" align="center">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/confusion_matrix_verde_normalized.png">
+</a>
 ## Como Executar o Projeto
 
 1. Clone este repositório:
@@ -69,7 +80,7 @@ git clone https://github.com/Daniel227a/desafio.git
 ```
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <a target="_blank" align="center">
-  <img align="right" top="500" height="300" width="400" alt="GIF" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif">
+  <img align="right" top="500" height="300" width="600" alt="GIF" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif">
 </a>
 - Cool Stats on Laptop
 <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/0b335028-1d3d-4ee5-b5b3-a373d499be7e" width="400">
