@@ -6,18 +6,24 @@
 
 Este projeto tem como objetivo a classificação e detecção de imagens de provas em dois tipos distintos: provas gabarito e provas simuladas. A classificação é realizada usando o modelo YOLOv8m-cls, que é uma versão do YOLO (You Only Look Once) otimizada para tarefas de classificação de objetos.  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Rocket.gif" width="16px">
 
-## Configuração do modelo de Classificação
+## Soluções Mobile
+<a target="_blank" align="center">
+  <img align="right"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app02.jpeg">
+  <img align="left"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app01.jpeg">
+</a>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<a target="_blank" align="center" >
+  <img align="left"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app03.jpeg">
+  <img align="rightv" height="600" width="500" alt="GIF" src="https://www.appdev360.com/wp-content/uploads/2021/02/gif-app-development-on-android.gif">
+</a>
 
-### Parâmetros do Modelo
+## Soluções Para windows
 
-- **Tarefa (Task):** Classificação de imagens.
-- **Modo (Mode):** Treinamento.
-- **Modelo (Model):** YOLOv8m-cls.yaml
-- **Dados (Data):** Diretório "/content/gdrive/MyDrive/simulados" contendo as imagens de treinamento.
-- **Épocas (Epochs):** 300.
-- **Paciência (Patience):** 50.
-- **Tamanho do Lote (Batch):** 16.
-- **Tamanho da Imagem (Imgsz):** 224 pixels.
+<a target="_blank" align="center">
+  <img align="center"  height="600" width="1000"  src="https://github.com/Daniel227a/desafio/blob/main/software_windows.jpeg">
+</a>
+
+
   
 ## Fluxo do Projeto
 ```mermaid
@@ -35,6 +41,7 @@ flowchart TD
     J-->F
     K-->F
 ```
+
 
 1. **Pré-processamento de Imagens:** As imagens de provas são pré-processadas para o tamanho de imagem especificado (224x224 pixels).
 2. **Treinamento do Modelo:** O modelo YOLOv8m-cls é treinado com as imagens de treinamento para classificar entre provas gabarito e provas simuladas.
@@ -54,6 +61,19 @@ flowchart TD
     C --> G[Diversos]
  
 ```
+## Configuração do modelo 
+
+### Parâmetros do Modelo
+
+- **Tarefa (Task):** Classificação de imagens.
+- **Modo (Mode):** Treinamento.
+- **Modelo (Model):** YOLOv8m-cls.yaml
+- **Dados (Data):** Diretório "/content/gdrive/MyDrive/simulados" contendo as imagens de treinamento.
+- **Épocas (Epochs):** 300.
+- **Paciência (Patience):** 50.
+- **Tamanho do Lote (Batch):** 16.
+- **Tamanho da Imagem (Imgsz):** 224 pixels.
+
 ### Parâmetros do Modelo para o Tipo verde
 - **Tarefa (Task):** detecção .
 - **Modo (Mode):** Treinamento.
@@ -63,6 +83,27 @@ flowchart TD
 - **Paciência (Patience):** 50.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 640 pixels.
+- 
+- ### Parâmetros do Modelo para o Tipo Azul
+- **Tarefa (Task):** detecção .
+- **Modo (Mode):** Treinamento.
+- **Modelo (Model):** yolov8m.yaml
+- **Épocas (Epochs):** 300.
+- **Paciência (Patience):** 50.
+- **Tamanho do Lote (Batch):** 16.
+- **Tamanho da Imagem (Imgsz):** 640 pixels.
+  
+### Parâmetros do Modelo para o Tipo Diversos
+- **Tarefa (Task):** detecção .
+- **Modo (Mode):** Treinamento.
+- **Modelo (Model):** yolov8m.yaml
+- **Épocas (Epochs):** 150.
+- **Paciência (Patience):** 50.
+- **Tamanho do Lote (Batch):** 16.
+- **Tamanho da Imagem (Imgsz):** 640 pixels.
+
+
+## Resultados do treinamento 
 
 ## Resultados do treinamento Modelo verde
 <a target="_blank" align="center">
@@ -75,14 +116,7 @@ flowchart TD
   <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/confusion_matrix_verde_normalized.png">
 </a>
 
-### Parâmetros do Modelo para o Tipo verde
-- **Tarefa (Task):** detecção .
-- **Modo (Mode):** Treinamento.
-- **Modelo (Model):** yolov8m.yaml
-- **Épocas (Epochs):** 300.
-- **Paciência (Patience):** 50.
-- **Tamanho do Lote (Batch):** 16.
-- **Tamanho da Imagem (Imgsz):** 640 pixels.
+
 ## Resultados do treinamento Modelo azul
 <a target="_blank" align="center">
   <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/results_blue_.png">
@@ -94,24 +128,17 @@ flowchart TD
   <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/confusion_blue_matrix_normalized.png">
 </a>
 
-### Parâmetros do Modelo para o Tipo Diversos
-- **Tarefa (Task):** detecção .
-- **Modo (Mode):** Treinamento.
-- **Modelo (Model):** yolov8m.yaml
-- **Épocas (Epochs):** 150.
-- **Paciência (Patience):** 50.
-- **Tamanho do Lote (Batch):** 16.
-- **Tamanho da Imagem (Imgsz):** 640 pixels.
-- 
+## Resultados do treinamento Modelo diversos
+<a target="_blank" align="center">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/results_diversos.png">
+</a>
+
 ## matriz de confusão normalizada Modelo diversos
 <a target="_blank" align="center">
   <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/confusion_matrix_diversos_normalized.png">
 </a>
 
-## Resultados do treinamento Modelo diversos
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/results_diversos.png">
-</a>
+
 
 # :man_technologist: Resultados
 
@@ -121,20 +148,10 @@ flowchart TD
   <img align="center"  height="800" width="1065"  src="https://github.com/Daniel227a/desafio/blob/main/verde_resultado.png">
 </a>
 	
-## Soluções Mobile
-<a target="_blank" align="center">
-  <img align="right"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app01.jpeg">
-  <img align="left"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app02.jpeg">
-</a>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<a target="_blank" align="center" >
-  <img align="left"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app03.jpeg">
-  <img align="rightv" height="600" width="500" alt="GIF" src="https://www.appdev360.com/wp-content/uploads/2021/02/gif-app-development-on-android.gif">
-</a>
 
 ## Como Executar o Projeto
 <a target="_blank" align="center">
-  <img align="right" top="500" height="300" width="300" alt="GIF" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif">
+  <img align="right" top="500" height="400" width="300" alt="GIF" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif">
 </a>
 
 1. Clone este repositório:
@@ -142,11 +159,19 @@ flowchart TD
 ```shell
 git clone https://github.com/Daniel227a/desafio.git
 ```
-2. Execute o jupyter
+2. Baixe os medelos treinados e insira no diretorio modelos
+   
+```shell
+https://drive.google.com/drive/folders/150vCXrseNIn_qCshArFYYRjI4ODhuXoW?usp=sharing
+```
+3. Execute o jupyter
 ```shell
 jupyter-notebook
 ```
-
+4. Abra o arquivo
+```shell
+Hackaton.ipynb
+```
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <a target="_blank" align="center">
@@ -163,65 +188,8 @@ jupyter-notebook
 
  <b>grow</b> <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Rocket.gif" width="18px">and 
 <b>excel</b> <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Medal.gif" width="20px">&nbsp.
-# :man_technologist: Luiz Carlos Abbott Galvão Neto
 
-```mermaid
-pie
-    title Pie Chart
-    "Dogs" : 386
-    "Cats" : 85
-    "Rats" : 150 
-```
-📊 **This week I spent my time on** 
 
-```text
-⌚︎ Timezone: Asia/Calcutta
-
-💬 Languages: 
-JavaScript               5 hrs 36 mins       ███████░░░░░░░░░░░░░░░░░░   29.7% 
-Python                   5 hrs 13 mins       ███████░░░░░░░░░░░░░░░░░░   27.69% 
-PHP                      2 hrs 28 mins       ███░░░░░░░░░░░░░░░░░░░░░░   13.12% 
-Markdown                 1 hr 58 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   10.46% 
-YAML                     1 hr 38 mins        ██░░░░░░░░░░░░░░░░░░░░░░░   8.74%
-
-🔥 Editors: 
-PyCharm                  8 hrs 35 mins       ███████████░░░░░░░░░░░░░░   45.55% 
-WebStorm                 7 hrs 47 mins       ██████████░░░░░░░░░░░░░░░   41.33% 
-PhpStorm                 2 hrs 28 mins       ███░░░░░░░░░░░░░░░░░░░░░░   13.12%
-<h2 align="center"> That's all folks!</h2>
-<p align="center">Raw version in the Markdown and reStructuredText format are available below</p>
-💻 Operating Systems: 
-Windows                  18 hrs 52 mins      █████████████████████████   100.0%
-
-```
-## Getting Started
-
-The project might have multiple branches: `master`, `development`, etc. which can be explained here
-
-* `master` contains aggregate code of all branches
-* `development` contains code under development
-
-Other details that need to be given while starting out with the project can be provided in this section. A project structure like below can also be included for the big projects:
-
-```
-	project-title
-	├── README.md
-	├── package.json
-	├── .gitignore
-	├── public
-	│   ├── favicon.ico
-	│   ├── index.html
-	│   └── manifest.json
-	└── src
-		├── App.css
-		├── App.js
-		├── App.test.js
-		├── index.css
-		├── index.js
-		├── logo.svg
-		└── serviceWorker.js
-		└── setupTests.js
-```
 
 #### 🤓 Check out my latest videos
 
