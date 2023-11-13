@@ -117,18 +117,27 @@ flowchart TD
 
 <a target="_blank" align="center">
   <img align="center"  height="800" width="1040"  src="https://github.com/Daniel227a/desafio/blob/main/azul_resultado.png">
-</a>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+<img  height="8" width="1000" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <a target="_blank" align="center">
   <img align="center"  height="800" width="1065"  src="https://github.com/Daniel227a/desafio/blob/main/verde_resultado.png">
 </a>
-## Como Executar o Projeto
+
+## Como Executar o Projeto<a target="_blank" align="center">
+  <img align="right" top="500" height="300" width="300" alt="GIF" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif">
+</a>
 
 1. Clone este repositório:
 
 ```shell
 git clone https://github.com/Daniel227a/desafio.git
 ```
+2. xecute o jumpyter
+```shell
+jumpyter-notebook
+```
+
+
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <a target="_blank" align="center">
   <img align="right" top="500" height="300" width="600" alt="GIF" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif">
