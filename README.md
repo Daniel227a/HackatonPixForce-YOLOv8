@@ -113,7 +113,15 @@ flowchart TD
   <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/results_diversos.png">
 </a>
 
-https://github.com/Daniel227a/desafio/blob/main/results_blue_.png
+# :man_technologist: Resultados
+
+<a target="_blank" align="center">
+  <img align="center"  height="800" width="1040"  src="https://github.com/Daniel227a/desafio/blob/main/azul_resultado.png">
+</a>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<a target="_blank" align="center">
+  <img align="center"  height="800" width="1065"  src="https://github.com/Daniel227a/desafio/blob/main/verde_resultado.png">
+</a>
 ## Como Executar o Projeto
 
 1. Clone este repositório:
