@@ -8,13 +8,13 @@ Este projeto tem como objetivo a classificação e detecção de imagens de prov
 
 ## Soluções Mobile
 <a target="_blank" align="center">
-  <img align="right"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app02.jpeg">
-  <img align="left"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app01.jpeg">
+  <img align="right"  height="800" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/images/app02.jpeg">
+  <img align="left"  height="800" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/images/app01.jpeg">
 </a>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <a target="_blank" align="center" >
-  <img align="left"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app03.jpeg">
+  <img align="left"  height="800" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/images/app03.jpeg">
   <img align="right" height="650" width="500" alt="GIF" src="https://www.appdev360.com/wp-content/uploads/2021/02/gif-app-development-on-android.gif">
 </a>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -22,7 +22,7 @@ Este projeto tem como objetivo a classificação e detecção de imagens de prov
 ## Soluções Para windows
 
 <a target="_blank" align="center">
-  <img align="center"  height="600" width="1000"  src="https://github.com/Daniel227a/desafio/blob/main/software_windows.jpeg">
+  <img align="center"  height="600" width="1000"  src="https://github.com/Daniel227a/desafio/blob/main/images/software_windows.jpeg">
 </a>
 
 
@@ -109,35 +109,35 @@ flowchart TD
 
 ## Resultados do treinamento Modelo verde
 <a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/results_verde.png">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/results_verde.png">
 </a>
 
 
 ## matriz de confusão normalizada  Modelo verde
 <a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/confusion_matrix_verde_normalized.png">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/confusion_matrix_verde_normalized.png">
 </a>
 
 
 ## Resultados do treinamento Modelo azul
 <a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/results_blue_.png">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/results_blue_.png">
 </a>
 
 
 ## matriz de confusão normalizada Modelo azul
 <a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/confusion_blue_matrix_normalized.png">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/confusion_blue_matrix_normalized.png">
 </a>
 
 ## Resultados do treinamento Modelo diversos
 <a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/results_diversos.png">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/results_diversos.png">
 </a>
 
 ## matriz de confusão normalizada Modelo diversos
 <a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/confusion_matrix_diversos_normalized.png">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/confusion_matrix_diversos_normalized.png">
 </a>
 
 
@@ -145,9 +145,9 @@ flowchart TD
 # :man_technologist: Resultados
 
 <a target="_blank" align="center">
-  <img align="center"  height="800" width="1040"  src="https://github.com/Daniel227a/desafio/blob/main/azul_resultado.png">
+  <img align="center"  height="800" width="1040"  src="https://github.com/Daniel227a/desafio/blob/main/images/azul_resultado.png">
 <a target="_blank" align="center">
-  <img align="center"  height="800" width="1065"  src="https://github.com/Daniel227a/desafio/blob/main/verde_resultado.png">
+  <img align="center"  height="800" width="1065"  src="https://github.com/Daniel227a/desafio/blob/main/images/verde_resultado.png">
 </a>
 	
 
@@ -161,7 +161,7 @@ flowchart TD
 ```shell
 git clone https://github.com/Daniel227a/desafio.git
 ```
-2. Baixe os medelos treinados e insira no diretorio modelos
+2. Baixe os modelos treinados e insira no diretório modelos
    
 ```shell
 https://drive.google.com/drive/folders/150vCXrseNIn_qCshArFYYRjI4ODhuXoW?usp=sharing
