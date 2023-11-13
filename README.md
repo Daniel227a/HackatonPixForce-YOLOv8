@@ -11,11 +11,13 @@ Este projeto tem como objetivo a classificação e detecção de imagens de prov
   <img align="right"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app02.jpeg">
   <img align="left"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app01.jpeg">
 </a>
+
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <a target="_blank" align="center" >
   <img align="left"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app03.jpeg">
-  <img align="rightv" height="600" width="500" alt="GIF" src="https://www.appdev360.com/wp-content/uploads/2021/02/gif-app-development-on-android.gif">
+  <img align="right" height="650" width="500" alt="GIF" src="https://www.appdev360.com/wp-content/uploads/2021/02/gif-app-development-on-android.gif">
 </a>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## Soluções Para windows
 
