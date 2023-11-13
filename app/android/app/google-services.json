@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "71267786084",
+    "project_id": "recuperarmodelo",
+    "storage_bucket": "recuperarmodelo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71267786084:android:efa58e928c1828d24eae71",
+        "android_client_info": {
+          "package_name": "com.codigo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXtYzwim4A4kWXCkVcFdng062WFFvNpvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
