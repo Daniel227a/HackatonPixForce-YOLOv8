@@ -94,6 +94,24 @@ flowchart TD
   <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/confusion_blue_matrix_normalized.png">
 </a>
 
+### Parâmetros do Modelo para o Tipo Diversos
+- **Tarefa (Task):** detecção .
+- **Modo (Mode):** Treinamento.
+- **Modelo (Model):** yolov8m.yaml
+- **Épocas (Epochs):** 150.
+- **Paciência (Patience):** 50.
+- **Tamanho do Lote (Batch):** 16.
+- **Tamanho da Imagem (Imgsz):** 640 pixels.
+- 
+## matriz de confusão normalizada Modelo diversos
+<a target="_blank" align="center">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/confusion_matrix_diversos_normalized.png">
+</a>
+
+## Resultados do treinamento Modelo diversos
+<a target="_blank" align="center">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/results_diversos.png">
+</a>
 
 https://github.com/Daniel227a/desafio/blob/main/results_blue_.png
 ## Como Executar o Projeto
