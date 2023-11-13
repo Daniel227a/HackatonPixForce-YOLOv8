@@ -120,8 +120,20 @@ flowchart TD
 <a target="_blank" align="center">
   <img align="center"  height="800" width="1065"  src="https://github.com/Daniel227a/desafio/blob/main/verde_resultado.png">
 </a>
+	
+## Soluções Mobile
+<a target="_blank" align="center">
+  <img align="right"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app01.jpeg">
+  <img align="left"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app02.jpeg">
+</a>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<a target="_blank" align="center" >
+  <img align="left"  height="600" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/app03.jpeg">
+  <img align="rightv" height="600" width="500" alt="GIF" src="https://www.appdev360.com/wp-content/uploads/2021/02/gif-app-development-on-android.gif">
+</a>
 
-## Como Executar o Projeto<a target="_blank" align="center">
+## Como Executar o Projeto
+<a target="_blank" align="center">
   <img align="right" top="500" height="300" width="300" alt="GIF" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif">
 </a>
 
