@@ -130,9 +130,9 @@ flowchart TD
 ```shell
 git clone https://github.com/Daniel227a/desafio.git
 ```
-2. Execute o jumpyter
+2. Execute o jupyter
 ```shell
-jumpyter-notebook
+jupyter-notebook
 ```
 
 
