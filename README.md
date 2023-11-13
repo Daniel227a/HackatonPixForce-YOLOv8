@@ -117,8 +117,6 @@ flowchart TD
 
 <a target="_blank" align="center">
   <img align="center"  height="800" width="1040"  src="https://github.com/Daniel227a/desafio/blob/main/azul_resultado.png">
-
-<img  height="8" width="1000" src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 <a target="_blank" align="center">
   <img align="center"  height="800" width="1065"  src="https://github.com/Daniel227a/desafio/blob/main/verde_resultado.png">
 </a>
