@@ -3,6 +3,10 @@
 
 O projeto tem como objetivo o desenvolvimento de protótipo para automatizar o processo de leitura e correção de provas e simulados aplicando técnicas de visão computacional. Foram aplicadas técnicas de Classificação, Detecção, etc.
 
+## Equipe Visão Pro
+- Lucas Nardelli de Freitas Botelho Saar
+- Daniel Pereira Monteiro
+- Gabriel Sávio
 
 ## Fluxo do Projeto
 
