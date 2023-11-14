@@ -227,32 +227,55 @@ Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirem
 </div>
 
 	
-
 ## Como Executar o Projeto
 
-<!--<a target="_blank" align="center">
-  <img align="right" top="500" height="400" width="300" alt="GIF" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif">
-</a>
--->
+1. **Clone este repositório:**
 
-1. Clone este repositório:
+   ```shell
+   git clone https://github.com/Daniel227a/desafio.git
+   ```
 
-```shell
-git clone https://github.com/Daniel227a/desafio.git
-```
-2. Baixe os modelos treinados e insira no diretório modelos
-   
-```shell
-https://drive.google.com/drive/folders/150vCXrseNIn_qCshArFYYRjI4ODhuXoW?usp=sharing
-```
-3. Execute o jupyter
-```shell
-jupyter-notebook
-```
-4. Abra o arquivo
-```shell
-Hackaton.ipynb
-```
+2. **Baixe os modelos treinados e insira no diretório "modelos":**
+
+   - [Google Drive - Modelos Treinados](https://drive.google.com/drive/folders/150vCXrseNIn_qCshArFYYRjI4ODhuXoW?usp=sharing)
+
+3. **Instale o Anaconda:**
+
+   Se você ainda não tem o Anaconda instalado, você pode baixá-lo [aqui](https://www.anaconda.com/products/distribution) e seguir as instruções de instalação apropriadas para o seu sistema operacional.
+
+4. **Crie um Ambiente Conda:**
+
+   No terminal ou Anaconda Prompt, navegue até o diretório do projeto e execute:
+
+   ```shell
+   conda env create -f environment.yml
+   ```
+
+   Isso criará um ambiente conda chamado "hackaton-env" com as dependências necessárias.
+
+5. **Ative o Ambiente Conda:**
+
+   ```shell
+   conda activate hackaton-env
+   ```
+
+6. **Execute o Jupyter Notebook:**
+
+   ```shell
+   jupyter-notebook
+   ```
+
+7. **Abra o Arquivo "Hackaton.ipynb":**
+
+Dentro do Jupyter Notebook, abra o arquivo "Hackaton.ipynb" para visualizar e executar o projeto.
+
+**Observação:** Certifique-se de que o ambiente conda "hackaton-env" está ativado enquanto você executa o Jupyter Notebook.
+
+Isso deve permitir que você execute o projeto em seu ambiente local. Certifique-se de ter todas as dependências instaladas e os modelos treinados disponíveis no diretório apropriado.
+
+
+
+
 - YouTube Logo Animation
 <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/63338029-e963-463a-88cb-c8f39c73e8d9" width="400">
 
