@@ -282,7 +282,10 @@ Para a solução desktop foi desenvolvida uma interface utilzando python com a b
 
 <!-- YT LIST START -->
 [<img src="https://raw.githubusercontent.com/jacques-blom/jacques-blom/cfa04ee011f40f5650cf30132dff9978e810ed93/assets/0.png" align="left" width="200" />](https://www.youtube.com/watch?v=z2mVkziLjvI&ab_channel=LucasSaar)
-        **[Make your GitHub profile DYNAMIC using a Netlify (Lambda) Function](https://www.youtube.com/watch?v=z2mVkziLjvI&ab_channel=LucasSaar)**
+        **[Solução Google Colab](https://www.youtube.com/watch?v=z2mVkziLjvI&ab_channel=LucasSaar)**
+        <br /> *14 Nov 2023*
+[<img src="https://raw.githubusercontent.com/jacques-blom/jacques-blom/cfa04ee011f40f5650cf30132dff9978e810ed93/assets/0.png" align="left" width="200" />](https://www.youtube.com/watch?v=lnIQJr3Ktjw&ab_channel=LucasSaar)
+        **[Solução Desktop](https://www.youtube.com/watch?v=lnIQJr3Ktjw&ab_channel=LucasSaar)**
         <br /> *14 Nov 2023*
 
 <br> <br/>
