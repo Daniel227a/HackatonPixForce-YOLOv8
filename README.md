@@ -90,6 +90,25 @@ Todos os modelos foram treinados utilizando o Google Colab.
 
 ### Modelos de Detecção
 
+### Parâmetros do Modelo de Provas
+- **Tarefa (Task):** detecção 
+- **Modo (Mode):** Treinamento
+- **Modelo (Model):** yolov8m.pt `pre-trained`
+- **Dados (Data):** Diretório "/content/gdrive/MyDrive/simulados" contendo as imagens de treinamento.
+- **Épocas (Epochs):** 300.
+- **Paciência (Patience):** 50.
+- **Tamanho do Lote (Batch):** 16.
+- **Tamanho da Imagem (Imgsz):** 640 pixels.
+
+### Resultados do Modelo de Provas
+<a target="_blank" align="center">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/dev/images/resultsProva.png" alt="Resultados da Prova">
+</a>
+<a target="_blank" align="center">
+  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/dev/images/matrixProvas.png" alt="Matriz de Confusão - Modelo Verde">
+</a>
+
+
 ### Parâmetros do Modelo para o Tipo verde
 - **Tarefa (Task):** detecção 
 - **Modo (Mode):** Treinamento
