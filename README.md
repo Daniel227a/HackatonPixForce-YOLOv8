@@ -265,7 +265,10 @@ Para a solução desktop foi desenvolvida uma interface utilzando python com a b
    ```shell
    conda activate hackaton-env
    ```
-
+5. **Faça download dos modelos e insira no diretório modelos**
+   ```shell
+   https://drive.google.com/drive/folders/150vCXrseNIn_qCshArFYYRjI4ODhuXoW?usp=sharing
+   ```
 6. **Execute o Jupyter Notebook:**
 
    ```shell
