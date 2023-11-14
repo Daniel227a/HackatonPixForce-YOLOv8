@@ -281,9 +281,10 @@ Para a solução desktop foi desenvolvida uma interface utilzando python com a b
 #### 🤓 Check out my latest videos
 
 <!-- YT LIST START -->
-[<img src="https://raw.githubusercontent.com/jacques-blom/jacques-blom/cfa04ee011f40f5650cf30132dff9978e810ed93/assets/0.png" align="left" width="200" />](https://www.youtube.com/watch?v=z6qmP6JJvz8)
+[<img src="https://raw.githubusercontent.com/jacques-blom/jacques-blom/cfa04ee011f40f5650cf30132dff9978e810ed93/assets/0.png" align="left" width="200" />]([https://www.youtube.com/watch?v=z6qmP6JJvz8](https://www.youtube.com/watch?v=z2mVkziLjvI&ab_channel=LucasSaar))
+*13 Jul 2020*
 **[Solução Google Colab]([https://www.youtube.com/watch?v=z6qmP6JJvz8](https://www.youtube.com/watch?v=z2mVkziLjvI&ab_channel=LucasSaar))**
-<br /> *13 Jul 2020*
+<br /> 
 
 <br> <br/>
 ## 🤝 Colaboradores
