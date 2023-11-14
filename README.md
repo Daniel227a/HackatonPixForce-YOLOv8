@@ -1,12 +1,44 @@
 
-# Projeto de Automação Visando a Correção Automática de Provas e Simulados 
+# Projeto de Automação para Correção  de Provas e Simulados Aplicando Técnicas de Visão Computacional
 
+O projeto tem como objetivo o desenvolvimento de protótipo para automatizar o processo de leitura e correção de provas e simulados aplicando técnicas de visão computacional. Foram aplicadas técnicas de Classificação, Detecção, etc.
 
-Este projeto tem como objetivo a classificação e detecção de imagens de provas em dois tipos distintos: provas gabarito e provas simuladas. A classificação é realizada usando o modelo YOLOv8m-cls, que é uma versão do YOLO (You Only Look Once) otimizada para tarefas de classificação de objetos.  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Rocket.gif" width="16px">
-
-O projeto tem como objetivo o desenvolvimento de protótipo para automatizar a correção de provas e simulados
 
 ## Fluxo do Projeto
+
+Segue abaixo a descrição detalhada do fluxo do projeto:
+1. **Submissão de Imagem de Entrada:**
+   - O processo inicia com a submissão de uma imagem, que pode ser uma prova ou gabarito.
+
+2. **Modelo de Classificação `YOLOv8m-cls` (1º Modelo):**
+   - A imagem é submetida ao primeiro modelo de classificação, `YOLOv8m-cls`.
+   - Este modelo classifica entre "Prova" ou "Simulado".
+
+3. **Caso: Prova (Classificado pelo 1º Modelo):**
+   - Se a imagem for classificada como "Prova", o fluxo continua para o próximo passo.
+
+4. **Modelo de Detecção `YOLOv8m` (2º Modelo):**
+   - A imagem (prova) é submetida ao segundo modelo de detecção, `YOLOv8m`.
+   - Este modelo detecta e retorna a questão marcada pelo usuário como resposta.
+
+5. **Caso: Simulado (Classificado pelo 1º Modelo):**
+   - Se a imagem for classificada como "Simulado", o fluxo se desvia para outra sequência de modelos.
+
+6. **Modelo de Classificação `YOLOv8m-cls` para Tipos de Simulados (3º Modelo):**
+   - A imagem (simulado) é submetida a um terceiro modelo de classificação, `YOLOv8m-cls`.
+   - Este modelo classifica entre os 3 formatos de simulados existentes.
+
+7. **Modelo de Detecção `YOLOv8m` para Simulados (4º Modelo):**
+   - A imagem (simulado) é passada para um quarto modelo de detecção, `YOLOv8m`.
+   - Este modelo retorna as questões marcadas pelo aluno no simulado.
+
+### Resumo:
+- O projeto começa com a classificação da imagem como "Prova" ou "Simulado" usando o `YOLOv8m-cls`.
+- Se for uma prova, é aplicado o `YOLOv8m` para detectar a questão marcada.
+- Se for um simulado, é feita uma nova classificação para determinar o tipo de simulado usando outro modelo `YOLOv8m-cls`.
+- Em seguida, um segundo modelo `YOLOv8m` é utilizado para detectar as questões marcadas no simulado.
+
+### Ilustração do Fluxo
 ```mermaid
 flowchart TD
     A{Provas ou Simulados} --> B[Respostas Prova]
@@ -42,6 +74,24 @@ flowchart TD
     C --> G[Diversos]
  
 ```
+
+## Informações de Treinamento
+### Ambiente
+Todos os modelos foram treinados utilizando o Google Colab.
+### Modelos de Classificação
+#### Parâmetros do Modelo
+
+- **Tarefa (Task):** Classificação de imagens.
+- **Modo (Mode):** Treinamento.
+- **Modelo (Model):** YOLOv8m-cls.yaml
+- **Dados (Data):** Diretório "/content/gdrive/MyDrive/simulados" contendo as imagens de treinamento.
+- **Épocas (Epochs):** 300.
+- **Paciência (Patience):** 50.
+- **Tamanho do Lote (Batch):** 16.
+- **Tamanho da Imagem (Imgsz):** 224 pixels.
+- **Aumento de Dados(Data Augmentation):** 
+
+### Modelos de Detecção
 
 ## Soluções Mobile
 
