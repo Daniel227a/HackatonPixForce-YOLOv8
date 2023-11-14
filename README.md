@@ -189,10 +189,10 @@ Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirem
 
 <div style="display: flex; justify-content: space-between;">
   <a target="_blank" align="center">
-    <img height="280" width="420" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_diversos.png" alt="Resultados da Prova">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_diversos.png" alt="Resultados da Prova">
   </a>
   <a target="_blank" align="center">
-    <img height="280" width="420" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_matrix_diversos_normalized.png" alt="Matriz de Confusão - Modelo Verde">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_matrix_diversos_normalized.png" alt="Matriz de Confusão - Modelo Verde">
   </a>
 </div>
 
