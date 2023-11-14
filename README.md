@@ -275,10 +275,7 @@ Para a solução desktop foi desenvolvida uma interface utilzando python com a b
    Isso deve permitir que você execute o projeto em seu ambiente local. Certifique-se de ter todas as dependências instaladas e os modelos treinados disponíveis no diretório apropriado.
 
 
-## Demostração
-
-- YouTube Logo Animation
-<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/63338029-e963-463a-88cb-c8f39c73e8d9" width="400">
+## Demostração da Solução
 
 
 #### 🤓 Check out my latest videos
