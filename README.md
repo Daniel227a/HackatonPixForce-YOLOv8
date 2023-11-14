@@ -55,79 +55,40 @@ flowchart TD
     K-->F
 ```
 
-
-1. **Pré-processamento de Imagens:** As imagens de provas são pré-processadas para o tamanho de imagem especificado (224x224 pixels).
-2. **Treinamento do Modelo:** O modelo YOLOv8m-cls é treinado com as imagens de treinamento para classificar entre provas gabarito e provas simuladas.
-3. **Classificação de Imagens:** Após o treinamento, o modelo é usado para classificar novas imagens como provas gabarito ou provas simuladas.
-
-
-3. **subconjunto das imagens de simulado**
-Caso a imagem for classificada como sendo uma do tipo simulado, ela será processada novamente agora para classificar a qual subconjunto das imagens de simulado ela pertence, visando assim atribuir a mesma um modelo otimizado para o seu tipo de prova, sendo estes o modelo para provas verdes o modelo para provas azul e o modelo para provas diversas que engloba uma variedade de provas com vários formatos diferentes. 
-
-
-```mermaid
-flowchart TD
-   C{Tipos Simulados} 
-    
-    C --> D[Verde]
-    C --> E[Azul]
-    C --> G[Diversos]
- 
-```
-
 ## Informações de Treinamento
 ### Ambiente
 Todos os modelos foram treinados utilizando o Google Colab.
 ### Modelos de Classificação
-#### Parâmetros do Modelo
 
-- **Tarefa (Task):** Classificação de imagens.
-- **Modo (Mode):** Treinamento.
-- **Modelo (Model):** YOLOv8m-cls.yaml
+#### Modelo Provas ou Simulado
+
+##### Parâmetros do Modelo
+
+- **Tarefa (Task):** Classificação
+- **Modo (Mode):** Treinamento
+- **Modelo (Model):** YOLOv8m-cls.pt `pre-trained` 
 - **Dados (Data):** Diretório "/content/gdrive/MyDrive/simulados" contendo as imagens de treinamento.
 - **Épocas (Epochs):** 300.
 - **Paciência (Patience):** 50.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 224 pixels.
-- **Aumento de Dados(Data Augmentation):** 
+- **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
+  
+#### Modelo dos Simulados
+
+##### Parâmetros do Modelo
+
+- **Tarefa (Task):** Classificação
+- **Modo (Mode):** Treinamento
+- **Modelo (Model):** YOLOv8m-cls.pt `pre-trained`
+- **Dados (Data):** Diretório "/content/gdrive/MyDrive/simulados" contendo as imagens de treinamento.
+- **Épocas (Epochs):** 300.
+- **Paciência (Patience):** 50.
+- **Tamanho do Lote (Batch):** 16.
+- **Tamanho da Imagem (Imgsz):** 224 pixels.
+- **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
 
 ### Modelos de Detecção
-
-## Soluções Mobile
-
-<p align="center">
-  <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app01.jpeg" alt="App 01">
-  <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app02.jpeg" alt="App 02">
-</p>
-
-<p align="center">
-  <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app03.jpeg" alt="App 03">
-  <img height="800" width="400" src="https://www.appdev360.com/wp-content/uploads/2021/02/gif-app-development-on-android.gif" alt="App GIF">
-</p>
-
-
-
-## Soluções Para windows
-
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="1000"  src="https://github.com/Daniel227a/desafio/blob/main/images/software_windows.jpeg">
-</a>
-
-
-  
-
-## Configuração do modelo 
-
-### Parâmetros do Modelo
-
-- **Tarefa (Task):** Classificação de imagens.
-- **Modo (Mode):** Treinamento.
-- **Modelo (Model):** YOLOv8m-cls.yaml
-- **Dados (Data):** Diretório "/content/gdrive/MyDrive/simulados" contendo as imagens de treinamento.
-- **Épocas (Epochs):** 300.
-- **Paciência (Patience):** 50.
-- **Tamanho do Lote (Batch):** 16.
-- **Tamanho da Imagem (Imgsz):** 224 pixels.
 
 ### Parâmetros do Modelo para o Tipo verde
 - **Tarefa (Task):** detecção .
@@ -156,6 +117,34 @@ Todos os modelos foram treinados utilizando o Google Colab.
 - **Paciência (Patience):** 50.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 640 pixels.
+
+
+## Soluções Mobile
+
+<p align="center">
+  <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app01.jpeg" alt="App 01">
+  <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app02.jpeg" alt="App 02">
+</p>
+
+<p align="center">
+  <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app03.jpeg" alt="App 03">
+  <img height="800" width="400" src="https://www.appdev360.com/wp-content/uploads/2021/02/gif-app-development-on-android.gif" alt="App GIF">
+</p>
+
+
+
+## Soluções Para windows
+
+<a target="_blank" align="center">
+  <img align="center"  height="600" width="1000"  src="https://github.com/Daniel227a/desafio/blob/main/images/software_windows.jpeg">
+</a>
+
+
+  
+
+## Configuração do modelo 
+
+
 
 
 ## Resultados do treinamento 
