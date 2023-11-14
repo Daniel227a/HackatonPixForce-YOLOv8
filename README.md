@@ -73,7 +73,17 @@ Todos os modelos foram treinados utilizando o Google Colab.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 224 pixels.
 - **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
-  
+
+#### Resultados do Modelo de Prova ou Simulado
+
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/resultsProva.png" alt="Resultados da Prova">
+  </a>
+  <a target="_blank" align="center">
+    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/matrixProvas.png" alt="Matriz de Confusão - Modelo Verde">
+  </a>
+</div>
 #### Modelo dos Simulados
 
 ##### Parâmetros do Modelo
@@ -90,7 +100,7 @@ Todos os modelos foram treinados utilizando o Google Colab.
 
 ### Modelos de Detecção
 
-### Parâmetros do Modelo de Provas
+#### Parâmetros do Modelo de Provas
 - **Tarefa (Task):** detecção 
 - **Modo (Mode):** Treinamento
 - **Modelo (Model):** yolov8m.pt `pre-trained`
@@ -100,16 +110,17 @@ Todos os modelos foram treinados utilizando o Google Colab.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 640 pixels.
 
-### Resultados do Modelo de Provas
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/dev/images/resultsProva.png" alt="Resultados da Prova">
-</a>
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/dev/images/matrixProvas.png" alt="Matriz de Confusão - Modelo Verde">
-</a>
+#### Resultados do Modelo de Provas
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/resultsProva.png" alt="Resultados da Prova">
+  </a>
+  <a target="_blank" align="center">
+    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/matrixProvas.png" alt="Matriz de Confusão - Modelo Verde">
+  </a>
+</div>
 
-
-### Parâmetros do Modelo para o Tipo verde
+#### Parâmetros do Modelo para o Tipo verde
 - **Tarefa (Task):** detecção 
 - **Modo (Mode):** Treinamento
 - **Modelo (Model):** yolov8m.pt `pre-trained`
@@ -120,7 +131,7 @@ Todos os modelos foram treinados utilizando o Google Colab.
 - **Tamanho da Imagem (Imgsz):** 640 pixels.
 - - **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
   
-- ### Parâmetros do Modelo para o Tipo Azul
+- #### Parâmetros do Modelo para o Tipo Azul
 - **Tarefa (Task):** detecção 
 - **Modo (Mode):** Treinamento
 - **Modelo (Model):** yolov8m.pt `pre-trained`
@@ -130,7 +141,7 @@ Todos os modelos foram treinados utilizando o Google Colab.
 - **Tamanho da Imagem (Imgsz):** 640 pixels.
 - **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
   
-### Parâmetros do Modelo para o Tipo Diversos
+#### Parâmetros do Modelo para o Tipo Diversos
 - **Tarefa (Task):** detecção 
 - **Modo (Mode):** Treinamento
 - **Modelo (Model):** yolov8m.pt `pre-trained`
