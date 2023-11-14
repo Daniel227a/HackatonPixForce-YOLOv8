@@ -17,7 +17,7 @@ class ImageClassifierApp:
         # Model paths
         self.modelClassificationPG = 'Modelos\\ProvaOuSimulado\\templteOrTest.pt'
         self.modelClassificationG = 'Modelos\\Modelo Simulados\\testClassifier.pt'
-        self.modelProvas = 'Modelos\\Provas\\model-n.pt'
+        self.modelProvas = 'Modelos\\Provas\\model-m.pt'
         self.modelGabarito1 = 'Modelos\\Simulado1\\simulado1-n.pt'
         self.modelGabarito2 = 'Modelos\\Simulado2\\simulado2-n.pt'
         self.modelGabarito3 = 'Modelos\\Simulado3\\simulado4-n.pt'
@@ -80,7 +80,7 @@ class ImageClassifierApp:
                 modelProvas = YOLO(self.modelProvas)
                 results = modelProvas.predict(source=imagem, save=True, save_crop=True)
                 classNames = modelProvas.names
-                question = results[0].boxes.cls.item()
+                question = results[0][0].boxes.cls.item()
                 answer = classNames[question]
                 print(f'A resposta marcada pelo aluno foi: {answer}.')
             else:
