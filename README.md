@@ -199,6 +199,8 @@ Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirem
 
 ## :man_technologist: Soluções e Resultados
 ### Mobile
+Para a criação da solução móvel, optamos pelo framework React Native, visando proporcionar uma experiência intuitiva por meio de uma interface amigável.
+
 <p align="center">
   <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app01.jpeg" alt="App 01">
   <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app02.jpeg" alt="App 02">
