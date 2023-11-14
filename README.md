@@ -196,8 +196,9 @@ Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirem
   </a>
 </div>
 
-## Soluções Mobile
 
+## :man_technologist: Soluções e Resultados
+### Mobile
 <p align="center">
   <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app01.jpeg" alt="App 01">
   <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app02.jpeg" alt="App 02">
@@ -210,64 +211,21 @@ Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirem
 
 
 
-## Soluções Para windows
+### Desktop
 
 <a target="_blank" align="center">
   <img align="center"  height="600" width="1000"  src="https://github.com/Daniel227a/desafio/blob/main/images/software_windows.jpeg">
 </a>
 
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="350" width="450" src="https://github.com/Daniel227a/desafio/blob/main/images/azul_resultado.png" alt="Resultado Azul">
+  </a>
+  <a target="_blank" align="center">
+    <img height="350" width="460" src="https://github.com/Daniel227a/desafio/blob/main/images/verde_resultado.png" alt="Resultado Verde">
+  </a>
+</div>
 
-  
-
-## Configuração do modelo 
-
-
-
-
-## Resultados do treinamento 
-
-## Resultados do treinamento Modelo verde
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/results_verde.png">
-</a>
-
-
-## matriz de confusão normalizada  Modelo verde
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/confusion_matrix_verde_normalized.png">
-</a>
-
-
-## Resultados do treinamento Modelo azul
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/results_blue_.png">
-</a>
-
-
-## matriz de confusão normalizada Modelo azul
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/confusion_blue_matrix_normalized.png">
-</a>
-
-## Resultados do treinamento Modelo diversos
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/results_diversos.png">
-</a>
-
-## matriz de confusão normalizada Modelo diversos
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/confusion_matrix_diversos_normalized.png">
-</a>
-
-
-
-# :man_technologist: Resultados
-
-<a target="_blank" align="center">
-  <img align="center"  height="800" width="1040"  src="https://github.com/Daniel227a/desafio/blob/main/images/azul_resultado.png">
-<a target="_blank" align="center">
-  <img align="center"  height="800" width="1065"  src="https://github.com/Daniel227a/desafio/blob/main/images/verde_resultado.png">
-</a>
 	
 
 ## Como Executar o Projeto
