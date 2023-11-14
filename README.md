@@ -267,11 +267,11 @@ Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirem
 
 7. **Abra o Arquivo "Hackaton.ipynb":**
 
-Dentro do Jupyter Notebook, abra o arquivo "Hackaton.ipynb" para visualizar e executar o projeto.
+  Dentro do Jupyter Notebook, abra o arquivo "Hackaton.ipynb" para visualizar e executar o projeto.
 
-**Observação:** Certifique-se de que o ambiente conda "hackaton-env" está ativado enquanto você executa o Jupyter Notebook.
+  **Observação:** Certifique-se de que o ambiente conda "hackaton-env" está ativado enquanto você executa o Jupyter Notebook.
 
-Isso deve permitir que você execute o projeto em seu ambiente local. Certifique-se de ter todas as dependências instaladas e os modelos treinados disponíveis no diretório apropriado.
+  Isso deve permitir que você execute o projeto em seu ambiente local. Certifique-se de ter todas as dependências instaladas e os modelos treinados disponíveis no diretório apropriado.
 
 
 ## Demostração
