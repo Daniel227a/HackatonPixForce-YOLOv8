@@ -297,15 +297,15 @@ Para a solução desktop foi desenvolvida uma interface utilzando python com a b
 <table>
   <tr>
     <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/49257791?v=4" width="100px;" alt="Daniel Pereira "/><br>
+      <a href="https://github.com/danieljpereira" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/49257791?v=4" width="100px;" alt="Daniel Pereira"/><br>
         <sub>
           <b>Daniel Pereira</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="#">
+      <a href="https://github.com/lucasnardelli" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/56940804?v=4" width="100px;" alt="Lucas Nardelli"/><br>
         <sub>
           <b>Lucas Nardelli</b>
@@ -313,8 +313,8 @@ Para a solução desktop foi desenvolvida uma interface utilzando python com a b
       </a>
     </td>
     <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/51803858?v=4" width="100px;" alt="Gabriel Mota "/><br>
+      <a href="https://github.com/gslmota" target="_blank">
+        <img src="https://avatars.githubusercontent.com/u/51803858?v=4" width="100px;" alt="Gabriel Mota"/><br>
         <sub>
           <b>Gabriel Mota</b>
         </sub>
@@ -322,3 +322,4 @@ Para a solução desktop foi desenvolvida uma interface utilzando python com a b
     </td>
   </tr>
 </table>
+
