@@ -229,9 +229,11 @@ Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirem
 	
 
 ## Como Executar o Projeto
-<a target="_blank" align="center">
+
+<!--<a target="_blank" align="center">
   <img align="right" top="500" height="400" width="300" alt="GIF" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif">
 </a>
+-->
 
 1. Clone este repositório:
 
@@ -262,7 +264,7 @@ Hackaton.ipynb
         **[Make your GitHub profile DYNAMIC using a Netlify (Lambda) Function](https://www.youtube.com/watch?v=z6qmP6JJvz8)**
         <br /> *13 Jul 2020*
 
-
+<br> <br/>
 ## 🤝 Colaboradores
 <table>
   <tr>
