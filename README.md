@@ -297,7 +297,7 @@ Para a solução desktop foi desenvolvida uma interface utilzando python com a b
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/danieljpereira" target="_blank">
+      <a href="https://github.com/Daniel227a" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/49257791?v=4" width="100px;" alt="Daniel Pereira"/><br>
         <sub>
           <b>Daniel Pereira</b>
