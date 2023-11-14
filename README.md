@@ -57,7 +57,7 @@ flowchart TD
 
 ## Informações de Treinamento
 ### Ambiente
-Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirements.txt`](./requirements.txt) contém a lista de todas as bibliotecas e suas versões necessárias para este projeto. Certifique-se de que essas bibliotecas estejam instaladas em seu ambiente, caso queira repetir o treinamento.
+Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirements.txt`](envs/requirements.txt) contém a lista de todas as bibliotecas e suas versões necessárias para este projeto. Certifique-se de que essas bibliotecas estejam instaladas em seu ambiente, caso queira repetir o treinamento.
 
 ### Modelos de Classificação
 
