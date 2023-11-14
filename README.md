@@ -125,10 +125,10 @@ Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirem
 #### Resultados do Modelo de Provas
 <div style="display: flex; justify-content: space-between;">
   <a target="_blank" align="center">
-    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/resultsProva.png" alt="Resultados da Prova">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/resultsProva.png" alt="Resultados da Prova">
   </a>
   <a target="_blank" align="center">
-    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/matrixProvas.png" alt="Matriz de Confusão - Modelo Verde">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/matrixProvas.png" alt="Matriz de Confusão - Modelo Verde">
   </a>
 </div>
 
@@ -147,10 +147,10 @@ Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirem
 
 <div style="display: flex; justify-content: space-between;">
   <a target="_blank" align="center">
-    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_verde.png" alt="Resultados da Prova">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_verde.png" alt="Resultados da Prova">
   </a>
   <a target="_blank" align="center">
-    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_matrix_verde_normalized.png" alt="Matriz de Confusão - Modelo Verde">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_matrix_verde_normalized.png" alt="Matriz de Confusão - Modelo Verde">
   </a>
 </div>
 
@@ -168,10 +168,10 @@ Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirem
 
 <div style="display: flex; justify-content: space-between;">
   <a target="_blank" align="center">
-    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_blue_.png" alt="Resultados da Prova">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_blue_.png" alt="Resultados da Prova">
   </a>
   <a target="_blank" align="center">
-    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_blue_matrix_normalized.png" alt="Matriz de Confusão - Modelo Verde">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_blue_matrix_normalized.png" alt="Matriz de Confusão - Modelo Verde">
   </a>
 </div>
 
