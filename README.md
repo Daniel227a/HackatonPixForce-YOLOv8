@@ -1,33 +1,44 @@
 
-# Projeto de Classificação de Imagens para Detecção de Questões em Provas 
+# Projeto de Automação para Correção  de Provas e Simulados Aplicando Técnicas de Visão Computacional
+
+O projeto tem como objetivo o desenvolvimento de protótipo para automatizar o processo de leitura e correção de provas e simulados aplicando técnicas de visão computacional. Foram aplicadas técnicas de Classificação, Detecção, etc.
 
 
-
-
-Este projeto tem como objetivo a classificação e detecção de imagens de provas em dois tipos distintos: provas gabarito e provas simuladas. A classificação é realizada usando o modelo YOLOv8m-cls, que é uma versão do YOLO (You Only Look Once) otimizada para tarefas de classificação de objetos.  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Rocket.gif" width="16px">
-
-## Soluções Mobile
-<a target="_blank" align="center">
-  <img align="right"  height="800" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/images/app02.jpeg">
-  <img align="left"  height="800" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/images/app01.jpeg">
-</a>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<a target="_blank" align="center" >
-  <img align="left"  height="800" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/images/app03.jpeg">
-  <img align="right" height="650" width="500" alt="GIF" src="https://www.appdev360.com/wp-content/uploads/2021/02/gif-app-development-on-android.gif">
-</a>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-## Soluções Para windows
-
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="1000"  src="https://github.com/Daniel227a/desafio/blob/main/images/software_windows.jpeg">
-</a>
-
-
-  
 ## Fluxo do Projeto
+
+Segue abaixo a descrição detalhada do fluxo do projeto:
+1. **Submissão de Imagem de Entrada:**
+   - O processo inicia com a submissão de uma imagem, que pode ser uma prova ou gabarito.
+
+2. **Modelo de Classificação `YOLOv8m-cls` (1º Modelo):**
+   - A imagem é submetida ao primeiro modelo de classificação, `YOLOv8m-cls`.
+   - Este modelo classifica entre "Prova" ou "Simulado".
+
+3. **Caso: Prova (Classificado pelo 1º Modelo):**
+   - Se a imagem for classificada como "Prova", o fluxo continua para o próximo passo.
+
+4. **Modelo de Detecção `YOLOv8m` (2º Modelo):**
+   - A imagem (prova) é submetida ao segundo modelo de detecção, `YOLOv8m`.
+   - Este modelo detecta e retorna a questão marcada pelo usuário como resposta.
+
+5. **Caso: Simulado (Classificado pelo 1º Modelo):**
+   - Se a imagem for classificada como "Simulado", o fluxo se desvia para outra sequência de modelos.
+
+6. **Modelo de Classificação `YOLOv8m-cls` para Tipos de Simulados (3º Modelo):**
+   - A imagem (simulado) é submetida a um terceiro modelo de classificação, `YOLOv8m-cls`.
+   - Este modelo classifica entre os 3 formatos de simulados existentes.
+
+7. **Modelo de Detecção `YOLOv8m` para Simulados (4º Modelo):**
+   - A imagem (simulado) é passada para um quarto modelo de detecção, `YOLOv8m`.
+   - Este modelo retorna as questões marcadas pelo aluno no simulado.
+
+### Resumo:
+- O projeto começa com a classificação da imagem como "Prova" ou "Simulado" usando o `YOLOv8m-cls`.
+- Se for uma prova, é aplicado o `YOLOv8m` para detectar a questão marcada.
+- Se for um simulado, é feita uma nova classificação para determinar o tipo de simulado usando outro modelo `YOLOv8m-cls`.
+- Em seguida, um segundo modelo `YOLOv8m` é utilizado para detectar as questões marcadas no simulado.
+
+### Ilustração do Fluxo
 ```mermaid
 flowchart TD
     A{Provas ou Simulados} --> B[Respostas Prova]
@@ -44,147 +55,243 @@ flowchart TD
     K-->F
 ```
 
+## Informações de Treinamento
+### Ambiente
+Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirements.txt`](envs/requirements.txt) contém a lista de todas as bibliotecas e suas versões necessárias para este projeto. Certifique-se de que essas bibliotecas estejam instaladas em seu ambiente, caso queira repetir o treinamento.
 
-1. **Pré-processamento de Imagens:** As imagens de provas são pré-processadas para o tamanho de imagem especificado (224x224 pixels).
-2. **Treinamento do Modelo:** O modelo YOLOv8m-cls é treinado com as imagens de treinamento para classificar entre provas gabarito e provas simuladas.
-3. **Classificação de Imagens:** Após o treinamento, o modelo é usado para classificar novas imagens como provas gabarito ou provas simuladas.
+### Modelos de Classificação
 
+#### Modelo Provas ou Simulado
 
-3. **subconjunto das imagens de simulado**
-Caso a imagem for classificada como sendo uma do tipo simulado, ela será processada novamente agora para classificar a qual subconjunto das imagens de simulado ela pertence, visando assim atribuir a mesma um modelo otimizado para o seu tipo de prova, sendo estes o modelo para provas verdes o modelo para provas azul e o modelo para provas diversas que engloba uma variedade de provas com vários formatos diferentes. 
+##### Parâmetros do Modelo
 
-
-```mermaid
-flowchart TD
-   C{Tipos Simulados} 
-    
-    C --> D[Verde]
-    C --> E[Azul]
-    C --> G[Diversos]
- 
-```
-## Configuração do modelo 
-
-### Parâmetros do Modelo
-
-- **Tarefa (Task):** Classificação de imagens.
-- **Modo (Mode):** Treinamento.
-- **Modelo (Model):** YOLOv8m-cls.yaml
+- **Tarefa (Task):** Classificação
+- **Modo (Mode):** Treinamento
+- **Modelo (Model):** YOLOv8m-cls.pt `pre-trained` 
 - **Dados (Data):** Diretório "/content/gdrive/MyDrive/simulados" contendo as imagens de treinamento.
 - **Épocas (Epochs):** 300.
 - **Paciência (Patience):** 50.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 224 pixels.
+- **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
 
-### Parâmetros do Modelo para o Tipo verde
-- **Tarefa (Task):** detecção .
-- **Modo (Mode):** Treinamento.
-- **Modelo (Model):** yolov8m.yaml
+##### Resultados do Modelo de Prova ou Simulado
+
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="400" width="400" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_ProvaGabarito.png" alt="Resultados da Prova">
+  </a>
+  <a target="_blank" align="center">
+    <img height="400" width="400" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_matrix_normalized_ProvaGabarito.png" alt="Matriz de Confusão - Modelo Verde">
+  </a>
+</div>
+
+#### Modelo dos Simulados
+
+##### Parâmetros do Modelo
+
+- **Tarefa (Task):** Classificação
+- **Modo (Mode):** Treinamento
+- **Modelo (Model):** YOLOv8m-cls.pt `pre-trained`
+- **Dados (Data):** Diretório "/content/gdrive/MyDrive/simulados" contendo as imagens de treinamento.
+- **Épocas (Epochs):** 300.
+- **Paciência (Patience):** 50.
+- **Tamanho do Lote (Batch):** 16.
+- **Tamanho da Imagem (Imgsz):** 224 pixels.
+- **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
+##### Resultados do Modelo de Prova ou Simulado
+
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="400" width="400" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_Simulados.png" alt="Resultados da Prova">
+  </a>
+  <a target="_blank" align="center">
+    <img height="400" width="400" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_matrix_normalized_Simulados.png" alt="Matriz de Confusão - Modelo Verde">
+  </a>
+</div>
+
+### Modelos de Detecção
+
+#### Parâmetros do Modelo de Provas
+- **Tarefa (Task):** detecção 
+- **Modo (Mode):** Treinamento
+- **Modelo (Model):** yolov8m.pt `pre-trained`
 - **Dados (Data):** Diretório "/content/gdrive/MyDrive/simulados" contendo as imagens de treinamento.
 - **Épocas (Epochs):** 300.
 - **Paciência (Patience):** 50.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 640 pixels.
-- 
-- ### Parâmetros do Modelo para o Tipo Azul
-- **Tarefa (Task):** detecção .
-- **Modo (Mode):** Treinamento.
-- **Modelo (Model):** yolov8m.yaml
+
+#### Resultados do Modelo de Provas
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/resultsProva.png" alt="Resultados da Prova">
+  </a>
+  <a target="_blank" align="center">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/matrixProvas.png" alt="Matriz de Confusão - Modelo Verde">
+  </a>
+</div>
+
+#### Parâmetros do Modelo para o Tipo verde
+- **Tarefa (Task):** detecção 
+- **Modo (Mode):** Treinamento
+- **Modelo (Model):** yolov8m.pt `pre-trained`
+- **Dados (Data):** Diretório "/content/gdrive/MyDrive/simulados" contendo as imagens de treinamento.
 - **Épocas (Epochs):** 300.
 - **Paciência (Patience):** 50.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 640 pixels.
+- **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
+
+#### Resultados do Modelo para o Tipo verde
+
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_verde.png" alt="Resultados da Prova">
+  </a>
+  <a target="_blank" align="center">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_matrix_verde_normalized.png" alt="Matriz de Confusão - Modelo Verde">
+  </a>
+</div>
+
+#### Parâmetros do Modelo para o Tipo Azul
+- **Tarefa (Task):** detecção 
+- **Modo (Mode):** Treinamento
+- **Modelo (Model):** yolov8m.pt `pre-trained`
+- **Épocas (Epochs):** 300.
+- **Paciência (Patience):** 50.
+- **Tamanho do Lote (Batch):** 16.
+- **Tamanho da Imagem (Imgsz):** 640 pixels.
+- **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
   
-### Parâmetros do Modelo para o Tipo Diversos
-- **Tarefa (Task):** detecção .
-- **Modo (Mode):** Treinamento.
-- **Modelo (Model):** yolov8m.yaml
+#### Resultados do Modelo para o Tipo Azul
+
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_blue_.png" alt="Resultados da Prova">
+  </a>
+  <a target="_blank" align="center">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_blue_matrix_normalized.png" alt="Matriz de Confusão - Modelo Verde">
+  </a>
+</div>
+
+#### Parâmetros do Modelo para o Tipo Diversos
+- **Tarefa (Task):** detecção 
+- **Modo (Mode):** Treinamento
+- **Modelo (Model):** yolov8m.pt `pre-trained`
 - **Épocas (Epochs):** 150.
 - **Paciência (Patience):** 50.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 640 pixels.
+- **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
+
+#### Resultados do Modelo para o Tipo Diversos
+
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_diversos.png" alt="Resultados da Prova">
+  </a>
+  <a target="_blank" align="center">
+    <img height="270" width="410" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_matrix_diversos_normalized.png" alt="Matriz de Confusão - Modelo Verde">
+  </a>
+</div>
 
 
-## Resultados do treinamento 
+## :man_technologist: Soluções e Resultados
+### Mobile
+<p align="center">
+  <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app01.jpeg" alt="App 01">
+  <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app02.jpeg" alt="App 02">
+</p>
 
-## Resultados do treinamento Modelo verde
+<p align="center">
+  <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app03.jpeg" alt="App 03">
+  <img height="800" width="400" src="https://www.appdev360.com/wp-content/uploads/2021/02/gif-app-development-on-android.gif" alt="App GIF">
+</p>
+
+
+
+### Desktop
+Para a solução desktop foi desenvolvida uma interface utilzando python com a biblioteca `tkinter`, para demosntrar o funcionamento da solução.
+
 <a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/results_verde.png">
+  <img align="center"  height="600" width="1000"  src="https://github.com/Daniel227a/desafio/blob/main/images/software_windows.jpeg">
 </a>
 
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="300" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/azul_resultado.png" alt="Resultado Azul">
+  </a>
+  <a target="_blank" align="center">
+    <img height="300" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/verde_resultado.png" alt="Resultado Verde">
+  </a>
+</div>
 
-## matriz de confusão normalizada  Modelo verde
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/confusion_matrix_verde_normalized.png">
-</a>
-
-
-## Resultados do treinamento Modelo azul
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/results_blue_.png">
-</a>
-
-
-## matriz de confusão normalizada Modelo azul
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/confusion_blue_matrix_normalized.png">
-</a>
-
-## Resultados do treinamento Modelo diversos
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/results_diversos.png">
-</a>
-
-## matriz de confusão normalizada Modelo diversos
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="900"  src="https://github.com/Daniel227a/desafio/blob/main/images/confusion_matrix_diversos_normalized.png">
-</a>
-
-
-
-# :man_technologist: Resultados
-
-<a target="_blank" align="center">
-  <img align="center"  height="800" width="1040"  src="https://github.com/Daniel227a/desafio/blob/main/images/azul_resultado.png">
-<a target="_blank" align="center">
-  <img align="center"  height="800" width="1065"  src="https://github.com/Daniel227a/desafio/blob/main/images/verde_resultado.png">
-</a>
 	
+## Como Executar o Projeto Localmente
 
-## Como Executar o Projeto
-<a target="_blank" align="center">
-  <img align="right" top="500" height="400" width="300" alt="GIF" src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif">
-</a>
+1. **Clone este repositório:**
 
-1. Clone este repositório:
+   ```shell
+   git clone https://github.com/Daniel227a/desafio.git
+   ```
 
-```shell
-git clone https://github.com/Daniel227a/desafio.git
-```
-2. Baixe os modelos treinados e insira no diretório modelos
+2. **Baixe os modelos treinados e insira no diretório "modelos":**
+
+   - [Google Drive - Modelos Treinados](https://drive.google.com/drive/folders/150vCXrseNIn_qCshArFYYRjI4ODhuXoW?usp=sharing)
+
+3. **Instale o Anaconda:**
+
+   Se você ainda não tem o Anaconda instalado, você pode baixá-lo [aqui](https://www.anaconda.com/products/distribution) e seguir as instruções de instalação apropriadas para o seu sistema operacional.
+
+4. **Crie um Ambiente Conda:**
+
+   No terminal ou Anaconda Prompt, navegue até o diretório do projeto e execute:
+
+   ```shell
+   conda env create -f environment.yml
+   ```
+
+   Isso criará um ambiente conda chamado "hackaton-env" com as dependências necessárias.
+
+5. **Ative o Ambiente Conda:**
+
+   ```shell
+   conda activate hackaton-env
+   ```
+
+6. **Execute o Jupyter Notebook:**
+
+   ```shell
+   jupyter-notebook
+   ```
+
+7. **Abra o Arquivo "Hackaton.ipynb":**
+
+   Dentro do Jupyter Notebook, abra o arquivo "Hackaton.ipynb" para visualizar e executar o projeto.
    
-```shell
-https://drive.google.com/drive/folders/150vCXrseNIn_qCshArFYYRjI4ODhuXoW?usp=sharing
-```
-3. Execute o jupyter
-```shell
-jupyter-notebook
-```
-4. Abra o arquivo
-```shell
-Hackaton.ipynb
-```
-- YouTube Logo Animation
-<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/63338029-e963-463a-88cb-c8f39c73e8d9" width="400">
+   **Observação:** Certifique-se de que o ambiente conda "hackaton-env" está ativado enquanto você executa o Jupyter Notebook.
+   
+   Isso deve permitir que você execute o projeto em seu ambiente local. Certifique-se de ter todas as dependências instaladas e os modelos treinados disponíveis no diretório apropriado.
 
 
-#### 🤓 Check out my latest videos
+## Demostração da Solução
+
+
+#### 🤓 Youtube Videos
 
 <!-- YT LIST START -->
-[<img src="https://raw.githubusercontent.com/jacques-blom/jacques-blom/cfa04ee011f40f5650cf30132dff9978e810ed93/assets/0.png" align="left" width="200" />](https://www.youtube.com/watch?v=z6qmP6JJvz8)
-        **[Make your GitHub profile DYNAMIC using a Netlify (Lambda) Function](https://www.youtube.com/watch?v=z6qmP6JJvz8)**
-        <br /> *13 Jul 2020*
+[<img src="https://raw.githubusercontent.com/jacques-blom/jacques-blom/cfa04ee011f40f5650cf30132dff9978e810ed93/assets/0.png" align="left" width="200" />](https://www.youtube.com/watch?v=z2mVkziLjvI&ab_channel=LucasSaar)
+        **[Solução Google Colab](https://www.youtube.com/watch?v=z2mVkziLjvI&ab_channel=LucasSaar)**
+        <br /> *14 Nov 2023*
 
+ <br> <br/>
+ 
+[<img src="https://raw.githubusercontent.com/jacques-blom/jacques-blom/cfa04ee011f40f5650cf30132dff9978e810ed93/assets/0.png" align="left" width="200" />](https://www.youtube.com/watch?v=lnIQJr3Ktjw&ab_channel=LucasSaar)
+        **[Solução Desktop](https://www.youtube.com/watch?v=lnIQJr3Ktjw&ab_channel=LucasSaar)**
+        <br /> *14 Nov 2023*
+
+<br> <br/>
 
 ## 🤝 Colaboradores
 <table>
