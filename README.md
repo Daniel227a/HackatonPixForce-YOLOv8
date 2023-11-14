@@ -219,10 +219,10 @@ Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirem
 
 <div style="display: flex; justify-content: space-between;">
   <a target="_blank" align="center">
-    <img height="350" width="450" src="https://github.com/Daniel227a/desafio/blob/main/images/azul_resultado.png" alt="Resultado Azul">
+    <img height="300" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/azul_resultado.png" alt="Resultado Azul">
   </a>
   <a target="_blank" align="center">
-    <img height="350" width="460" src="https://github.com/Daniel227a/desafio/blob/main/images/verde_resultado.png" alt="Resultado Verde">
+    <img height="300" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/verde_resultado.png" alt="Resultado Verde">
   </a>
 </div>
 
