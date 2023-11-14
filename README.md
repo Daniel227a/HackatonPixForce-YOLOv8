@@ -213,6 +213,7 @@ Todos os modelos foram treinados utilizando o Google Colab. O arquivo [`requirem
 
 ### Desktop
 Para a solução desktop foi desenvolvida uma interface utilzando python com a biblioteca `tkinter`, para demosntrar o funcionamento da solução.
+
 <a target="_blank" align="center">
   <img align="center"  height="600" width="1000"  src="https://github.com/Daniel227a/desafio/blob/main/images/software_windows.jpeg">
 </a>
