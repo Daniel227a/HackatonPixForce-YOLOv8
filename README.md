@@ -1,32 +1,11 @@
 
-# Projeto de Classificação de Imagens para Detecção de Questões em Provas 
-
-
+# Projeto de Automação Visando a Correção Automática de Provas e Simulados 
 
 
 Este projeto tem como objetivo a classificação e detecção de imagens de provas em dois tipos distintos: provas gabarito e provas simuladas. A classificação é realizada usando o modelo YOLOv8m-cls, que é uma versão do YOLO (You Only Look Once) otimizada para tarefas de classificação de objetos.  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Rocket.gif" width="16px">
 
-## Soluções Mobile
-<a target="_blank" align="center">
-  <img align="right"  height="800" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/images/app02.jpeg">
-  <img align="left"  height="800" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/images/app01.jpeg">
-</a>
+O projeto tem como objetivo o desenvolvimento de protótipo para automatizar a correção de provas e simulados
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-<a target="_blank" align="center" >
-  <img align="left"  height="800" width="400"  src="https://github.com/Daniel227a/desafio/blob/main/images/app03.jpeg">
-  <img align="right" height="650" width="500" alt="GIF" src="https://www.appdev360.com/wp-content/uploads/2021/02/gif-app-development-on-android.gif">
-</a>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-## Soluções Para windows
-
-<a target="_blank" align="center">
-  <img align="center"  height="600" width="1000"  src="https://github.com/Daniel227a/desafio/blob/main/images/software_windows.jpeg">
-</a>
-
-
-  
 ## Fluxo do Projeto
 ```mermaid
 flowchart TD
@@ -63,6 +42,30 @@ flowchart TD
     C --> G[Diversos]
  
 ```
+
+## Soluções Mobile
+
+<p align="center">
+  <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app01.jpeg" alt="App 01">
+  <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app02.jpeg" alt="App 02">
+</p>
+
+<p align="center">
+  <img height="800" width="400" src="https://github.com/Daniel227a/desafio/blob/main/images/app03.jpeg" alt="App 03">
+  <img height="800" width="400" src="https://www.appdev360.com/wp-content/uploads/2021/02/gif-app-development-on-android.gif" alt="App GIF">
+</p>
+
+
+
+## Soluções Para windows
+
+<a target="_blank" align="center">
+  <img align="center"  height="600" width="1000"  src="https://github.com/Daniel227a/desafio/blob/main/images/software_windows.jpeg">
+</a>
+
+
+  
+
 ## Configuração do modelo 
 
 ### Parâmetros do Modelo
