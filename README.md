@@ -74,16 +74,17 @@ Todos os modelos foram treinados utilizando o Google Colab.
 - **Tamanho da Imagem (Imgsz):** 224 pixels.
 - **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
 
-#### Resultados do Modelo de Prova ou Simulado
+##### Resultados do Modelo de Prova ou Simulado
 
 <div style="display: flex; justify-content: space-between;">
   <a target="_blank" align="center">
-    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/resultsProva.png" alt="Resultados da Prova">
+    <img height="400" width="400" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_ProvaGabarito.png" alt="Resultados da Prova">
   </a>
   <a target="_blank" align="center">
-    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/matrixProvas.png" alt="Matriz de Confusão - Modelo Verde">
+    <img height="400" width="400" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_matrix_normalized_ProvaGabarito.png" alt="Matriz de Confusão - Modelo Verde">
   </a>
 </div>
+
 #### Modelo dos Simulados
 
 ##### Parâmetros do Modelo
@@ -97,6 +98,16 @@ Todos os modelos foram treinados utilizando o Google Colab.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 224 pixels.
 - **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
+##### Resultados do Modelo de Prova ou Simulado
+
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="400" width="400" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_Simulados.png" alt="Resultados da Prova">
+  </a>
+  <a target="_blank" align="center">
+    <img height="400" width="400" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_matrix_normalized_Simulados.png" alt="Matriz de Confusão - Modelo Verde">
+  </a>
+</div>
 
 ### Modelos de Detecção
 
@@ -129,9 +140,20 @@ Todos os modelos foram treinados utilizando o Google Colab.
 - **Paciência (Patience):** 50.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 640 pixels.
-- - **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
-  
-- #### Parâmetros do Modelo para o Tipo Azul
+- **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
+
+#### Resultados do Modelo para o Tipo verde
+
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_verde.png" alt="Resultados da Prova">
+  </a>
+  <a target="_blank" align="center">
+    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_matrix_verde_normalized.png" alt="Matriz de Confusão - Modelo Verde">
+  </a>
+</div>
+
+#### Parâmetros do Modelo para o Tipo Azul
 - **Tarefa (Task):** detecção 
 - **Modo (Mode):** Treinamento
 - **Modelo (Model):** yolov8m.pt `pre-trained`
@@ -141,6 +163,17 @@ Todos os modelos foram treinados utilizando o Google Colab.
 - **Tamanho da Imagem (Imgsz):** 640 pixels.
 - **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
   
+#### Resultados do Modelo para o Tipo Azul
+
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_blue_.png" alt="Resultados da Prova">
+  </a>
+  <a target="_blank" align="center">
+    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_blue_matrix_normalized.png" alt="Matriz de Confusão - Modelo Verde">
+  </a>
+</div>
+
 #### Parâmetros do Modelo para o Tipo Diversos
 - **Tarefa (Task):** detecção 
 - **Modo (Mode):** Treinamento
@@ -150,6 +183,17 @@ Todos os modelos foram treinados utilizando o Google Colab.
 - **Tamanho do Lote (Batch):** 16.
 - **Tamanho da Imagem (Imgsz):** 640 pixels.
 - **Aumento de Dados(Data Augmentation):** rotation: 5 and 10 degrees.
+
+#### Resultados do Modelo para o Tipo Diversos
+
+<div style="display: flex; justify-content: space-between;">
+  <a target="_blank" align="center">
+    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/results_diversos.png" alt="Resultados da Prova">
+  </a>
+  <a target="_blank" align="center">
+    <img height="300" width="450" src="https://github.com/Daniel227a/desafio/blob/dev/images/confusion_matrix_diversos_normalized.png" alt="Matriz de Confusão - Modelo Verde">
+  </a>
+</div>
 
 ## Soluções Mobile
 
