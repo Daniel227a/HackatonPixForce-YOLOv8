@@ -228,7 +228,7 @@ Para a solução desktop foi desenvolvida uma interface utilzando python com a b
 </div>
 
 	
-## Como Executar o Projeto
+## Como Executar o Projeto Localmente
 
 1. **Clone este repositório:**
 
